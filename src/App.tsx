@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { PomodoroTimer } from "./PomodoroTimer";
 type Task = {
   completed: boolean;
   id: string;
@@ -91,6 +91,11 @@ function Tasks() {
 export default function Pomodoro() {
   return (
     <div className="container">
+      <div className="timerSection">
+        <PomodoroTimer />
+      </div>
+       <div className="divider"></div>
+
       <h1 className="title">Tasks</h1>
 
       <Tasks />
